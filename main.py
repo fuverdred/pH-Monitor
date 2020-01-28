@@ -3,14 +3,14 @@ from pyb import Pin, I2C, ADC
 import dht
 
 from pyb_i2c_lcd import I2cLcd
-from PH_Meter import PH_Monitor
+from PH_Monitor import PH_Monitor
 
 LCD_ADDRESS = 0x27
 
 pump_1 = Pin('Y9', mode=Pin.OUT_PP)
 pump_2 = Pin('Y10', mode = Pin.OUT_PP)
 
-button_pin = ADC('X8')
+button_pin = ADC('X11')
 ph_pin = ADC('X7')
 
 d_temp_humid = dht.DHT11(Pin('X6'))

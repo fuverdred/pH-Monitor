@@ -25,3 +25,5 @@ ph_monitor = PH_Monitor(ph_pin,
                         pump_2,
                         d_temp_humid,
                         lcd)
+
+ph_monitor.loop()

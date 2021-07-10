@@ -198,7 +198,7 @@ class PH_Monitor:
             #Update LED
             if not t % 10000: # update the screen every 10 seconds
                 if not running_flag:
-                    self.lcd_write('HELLO BARNEY')
+                    self.lcd_write('HELLO')
                     self.lcd_write('NOT RUNNING', 1)
                 else:
                     temperature, humidity = self.read_dht()

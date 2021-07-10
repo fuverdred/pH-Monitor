@@ -3,7 +3,7 @@ from pyb import Pin, I2C, ADC
 import dht
 
 from pyb_i2c_lcd import I2cLcd
-from PH_Monitor import PH_Monitor
+from pH_monitor import PH_Monitor
 
 LCD_ADDRESS = 0x27
 
